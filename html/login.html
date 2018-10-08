@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录</title>
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link href="../css/login.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<ul>
+					<li><img src="../img/logo.png" alt="商城Logo" class="logo"/></li>
+					<li><img src="../img/slogan.png" alt="slogan" class="slogan"/></li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="login-box">
+					<p>
+						<h2>欢迎登录海尔商城<a href="register.html">免费注册></a></h2>
+					</p>
+					<hr />
+					<form class="login-info" id="txt" method="get" name="forms" action="#">
+					<!--<div class="login-info">-->
+						<ul>
+							<li><a href="#" class="normal">普通登录</a><span id="a_normal" class="a-normal"></span></li>
+							<li><a href="#" class="phone">手机动态密码登录</a><span id="a_phone" class="a-phone"></span></li>
+						</ul>
+						<div class="login-toggle">
+							<input type="text" class="user" placeholder="手机/邮箱"/>
+								<svg class="icon" aria-hidden="true">
+								  <use xlink:href="#icon-yonghu"></use>
+								</svg>
+							<br>
+							<span class="usertip" id="usertip"></span><br>
+							<input type="text" class="psw" placeholder="密码" /><br>
+							<span id="pswtip" class="pswtip"></span><br>
+							<a href="#">忘记密码？</a><br />
+							<input type="submit" class="login" id="btn-login" value="登录">
+							<!--<button class="login" id="btn-login">登录</button>-->
+						</div>
+						
+						<div class="login-toggle1">
+							<input type="text" class="user1" placeholder="手机号"/><br><span class="usertip" id="usertip1"></span><br>
+							<input type="text" class="psw1" placeholder="验证码" /><a><i class="iconfont icon-wangshenicon_huoquyanzhengma"></i></a>
+							<!--<svg class="icon" aria-hidden="true">
+							  <use xlink:href="#icon-wangshenicon_huoquyanzhengma"></use>
+							</svg>-->
+							<br><span class="pswtip" id="pswtip1"></span><br>
+							<input type="submit" class="login" id="btn-login" value="登录">
+							<!--<button class="login" id="btn-login">登录</button>-->
+						</div>
+						
+						
+					<!--</div>-->
+					</form>
+					<br><hr />
+					<ul>
+						<li>其它登录方式：</li>
+						<li>
+							<svg class="icon" aria-hidden="true">
+							  <use xlink:href="#icon-xinlangweibo"></use>
+							</svg>
+						新浪微博</li>
+						<li>
+							<svg class="icon" aria-hidden="true">
+							  <use xlink:href="#icon-zhifubao"></use>
+							</svg>
+						支付宝</li>
+						<li>
+							<svg class="icon" aria-hidden="true">
+							  <use xlink:href="#icon-wangyi"></use>
+							</svg>
+						网易</li>
+						<li>
+							<svg class="icon" aria-hidden="true">
+							  <use xlink:href="#icon-shouji"></use>
+							</svg>
+						快捷通</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer-top">
+					<ul>
+						<li><a href="#">关于我们</a><span class="links-ver">|</span></li>
+						<li><a href="#">投诉建议</a><span class="links-ver">|</span></li>
+						<li><a href="#">售后服务</a><span class="links-ver">|</span></li>
+						<li><a href="#">联系我们</a><span class="links-ver">|</span></li>
+						<li><a href="#">友情链接</a></li>
+					</ul><br /><br /><br />
+					<p>网站备案/许可证号:
+						<a href="#"> 鲁ICP备09096283号</a>
+						<a href="#">鲁公网安备37021202000654号</a>
+					</p>
+					<p>Copyright&copy;2000-2018 海尔集团电子商务有限公司 All Rights Reserved</p>
+				</div>
+				<div class="footer-bottom">
+					<ul>
+						<li><img src="../img/login01.png"></li>
+						<li><img src="../img/login02.png"></li>
+						<li><img src="../img/login03.png"></li>
+						<li><img src="../img/login04.jpg" height="40px"></li>
+						<li><img src="../img/login05.jpg"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="../js/iconfont.js"></script>
+		<script src="../js/jquery-1.11.1.js"></script>
+		<script src="../js/my.js"></script>
+	</body>
+</html>

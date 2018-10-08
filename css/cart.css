@@ -1,0 +1,130 @@
+body{
+	background: #fff;
+}
+.cart-message-box{
+	line-height: 2em;
+    margin: 0 0 40px;
+    padding: 10px 0 10px 330px;
+    width: 400px;
+    background: url(../img/cart/cart_no_ico.png) no-repeat 200px 0;
+}
+.p-message-info{
+	font-size: 1.18em;
+    font-weight: 700;
+    padding: 0 0 10px;
+}
+.cart-message-box a{
+	color: #015ba7;
+    margin: 0 2px;
+    text-decoration: underline;
+}
+.cart-message-box a:hover{
+	text-decoration: none;
+	color: #2979ff;
+}
+.message-recom{
+	height: 292px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #d0d0d0;
+}
+.message-recom-hd{
+	height: 41px;
+    line-height: 41px;
+}
+.m-h2{
+	display: inline-block;
+	vertical-align: middle;
+	color: #d71249;
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-right: 20px;
+}
+.m-h3{
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+    font-weight: 400;
+    height: 26px;
+    line-height: 24px;
+    text-align: center;
+    width: 74px;
+    background: #e6e7e8;
+    margin-left: 10px;
+    font-size: 12px;
+
+}
+.m-h3.current{
+    background: url(../img/cart/icon-kinds.png) no-repeat 0 -200px;
+	color: #fff;
+}
+.message-recom-bd01{
+	background: #fff none repeat scroll 0 0;
+    border-left: 1px solid #d0d0d0;
+    border-right: 1px solid #d0d0d0;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+    width: 998px;
+}
+.message-recom-bd01{
+	border-bottom: 1px solid #d0d0d0;
+    border-top: 1px solid #d0d0d0;
+}
+.message-recom-bd01 li{
+	background-position: 1000px 0;
+    border-right: 1px solid #d0d0d0;
+    float: left;
+    height: 249px;
+    position: relative;
+    width: 249px;
+}
+.message-recom-bd01.current{
+	display: none;
+}
+.message-recom-bd01 li>a{
+	display: block;
+    padding: 14px 0 6px;
+    text-align: center;
+}
+.m-h4{
+	font-weight: 400;
+    overflow: hidden;
+    padding: 0 15px;
+    text-align: center;
+}
+.m-h4-a1{
+	color: #26529b;
+    display: block;
+    font-size: 1.18em;
+    height: 20px;
+    overflow: hidden;
+    padding: 2px 0 1px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 211px;
+}
+.m-h4-a2{
+	display: block;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 211px;
+    line-height: 20px;
+}
+.m-h4-a2:hover{
+	text-decoration: underline;
+}
+.m-h4 em{
+	color: #d71249;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 2px 0 0;
+    font-style: normal;
+}
+.message-recom-bd01 li.last-li{
+	border-right: 0;
+	width: 248px;
+}

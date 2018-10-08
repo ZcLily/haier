@@ -1,0 +1,354 @@
+/*list-main01*/
+.list-main01{
+	overflow: hidden;
+    zoom: 1;
+    margin: 0 0 10px;
+}
+.list-main01-left{
+	position: relative;
+    border: 1px solid #ddd;
+    border-top: 3px solid #d71249;
+    height: 297px;
+    float: left;
+    width: 251px;
+    overflow: hidden;
+}
+
+.list-title{
+	height: 40px;
+    line-height: 40px;
+    color: rgb(214, 20, 70);
+    font-weight: 700;
+    font-size: 1.33em;
+    font-family: 微软雅黑;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    padding: 0px 15px;
+}
+.more-change{
+	position: absolute;
+    top: 14px;
+    right: 12px;
+    color: rgb(214, 20, 70);
+    font-family: 宋体;
+}
+.list-main01-left dl{
+	margin: 10px 15px 0;
+    padding: 4px 0 8px;
+    overflow: hidden;
+    zoom: 1;
+    border-bottom: 1px dashed #ddd;
+}
+.list-main01-left dt{
+	float: left;
+    width: 65px;
+    font-weight: 700;
+    line-height: 1.8em;
+}
+.list-main01-left dd{
+	float: left;
+    width: 155px;
+    line-height: 1.8em;
+}
+.list-main01-left dd a{
+	margin: 0 6px;
+}
+.list-main01-left dl.last-dl{
+	border-bottom: 0;
+}
+.list-main01-right{
+	position: relative;
+    height: 300px;
+	float: right;
+    width: 738px;
+    overflow: hidden;
+}
+.list-banner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 300px;
+	width: 738px;
+}
+.list-banner li{
+	display: none;
+}
+.list-banner li.current{
+	display: block;
+}
+.list-banner-num{
+	position: absolute;
+	left: 0;
+	bottom:0;
+	width: 718px;
+    padding: 12px 10px 0 10px;
+    height: 22px;
+    background: #fff;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    text-align: right;
+}
+.list-banner-num li{
+	height: 11px;
+	width: 11px;
+	border-radius: 100%;
+	background: #6d6963;
+	display: inline-block;
+}
+.list-banner-num li.current{
+	background: #eb803b;
+}
+/*list-main02*/
+.list-main02,.list-main03,.list-main04{
+	overflow: hidden;
+    zoom: 1;
+    margin: 0 0 10px;
+}
+.list-main02-left{
+	float: left;
+    width: 251px;
+    height: 307px;
+    overflow: hidden;
+}
+.list-main02-right{
+	padding-bottom: 35px;
+    height: 272px;
+    overflow: hidden;
+    float: right;
+    width: 738px;
+}
+.list-tab-nav{
+	height: 33px;
+}
+.list-tab-nav ul li{
+	width: 183px;
+	height: 33px;
+	line-height: 32px;
+	text-align: center;
+	float: left;
+	font-size: 1.18em;
+    cursor: pointer;
+    font-family: 微软雅黑;
+    text-align: center;
+    border-width: 1px 1px 1px 0px;
+    border-style: solid solid solid;
+    border-color: rgb(221, 221, 221) rgb(221, 221, 221) rgb(221, 221, 221);
+    border-image: initial;
+    border-left: 0px;
+    background: url(../img/list/sprite-kinds.png) repeat-x 0px -120px;
+}
+.list-tab-nav ul li.tab-nav01{
+	width: 184px;
+	border-left: 1px solid #ddd;
+}
+.list-tab-nav ul li.current{
+	border-top: 3px solid #dc3874;
+    border-bottom: 1px solid #fff;
+    line-height: 28px;
+    height: 31px;
+    background: #fff;
+}
+.tab-list{
+	overflow: hidden;
+    width: 736px;
+    height: 271px;
+    border: 1px solid #ddd;
+    border-top: 0;
+}
+.tab-list-content{
+	width: 800px;
+	overflow: hidden;
+	display: none;
+}
+.tab-list ul.current{
+	display: block;
+}
+.tab-list-content li{
+	position: relative;
+    float: left;
+    width: 179px;
+    padding: 10px 0 0;
+    margin: 0 6px 0 0;
+    display: inline;
+    text-align: center;
+    overflow: hidden;
+}
+.tab-con-img{
+	display: block;
+    margin: 0 auto 0 0;
+    height: 160px;
+    overflow: hidden;
+}
+.tab-list-content li h4{
+	font-weight: 400;
+    line-height: 22px;
+    position: relative;
+    height: 66px;
+    padding-top: 22px;
+    font-size: 1em;
+}
+.tab-con-tit{
+	position: absolute;
+    left: 0;
+    bottom: 66px;
+    text-align: left;
+    padding-left: 25px;
+    width: 153px;
+    background-position: 11px 6px;
+    display: block;
+    color: #26539c;
+    height: 22px;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.tab-con-tit:hover{
+	height: 66px;
+	background: rgba(255,255,255,0.7);
+	text-decoration: underline;
+}
+.a-info{
+	display: block;
+    color: #666;
+    height: 44px;
+    line-height: 22px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.a-info em{
+	display: block;
+    color: #d71249;
+    height: 22px;
+    overflow: hidden;
+    font-style: normal;
+}
+.list-price{
+	display: block;
+}
+.list-price strong{
+	font-weight: 700;
+    font-size: 1.18em;
+    color: #d71249;
+    vertical-align: top;
+}
+.list-main04 .list-main02-left{
+	height: 302px;
+    border: 1px solid #ddd;
+    border-top: 3px solid #d71249;
+}
+.more-top{
+	height: 40px;
+    line-height: 40px;
+    color: rgb(214, 20, 70);
+    border-bottom: 1px solid rgb(233, 233, 233);
+    padding: 0px 15px;
+    background: #f2f2f2;
+}
+.more-top h2{
+	float: left;
+	font-weight: 700;
+    font-size: 1.33em;
+    font-family: 微软雅黑;
+}
+.more-top a{
+	float: right;
+	color: rgb(214, 20, 70);
+    font-family: 宋体;
+}
+.list-passager{
+	padding: 5px 12px 0;
+}
+.list-passager li{
+	height: 31px;
+    line-height: 31px;
+    border-bottom: 1px dashed #ddd;
+    padding: 0 0 0 10px;
+    background: url(../img/list/sprite-dot.png) no-repeat 0 -186px;
+}
+.list-passager li:last-child{
+    border-bottom: 0;	
+}
+.list-main05{
+	overflow: hidden;
+    zoom: 1;
+    margin: 0 0 10px;
+}
+.list-main05-left{
+	height: 168px;
+    border: 1px solid #ddd;
+    border-top: 3px solid #d71249;
+    float: left;
+    width: 251px;
+    overflow: hidden;    
+}
+.list-service{
+	padding: 10px 0 10px 10px;
+    overflow: hidden;
+    zoom: 1;
+}
+.list-service li{
+	float: left;
+    width: 105px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding-left: 15px;
+    background: url(../img/list/sprite-dot.png) no-repeat 5px -190px;
+    
+}
+.list-main05-center{
+	height: 170px;
+	overflow: hidden;
+	float: left;
+    width: 498px;
+    border: 1px solid #ddd;
+    border-right: 0;
+    margin-left: 10px;
+}
+.list-main05-right{
+	float: right;
+	height: 170px;
+    width: 236px;
+    border: 1px solid #ddd;
+}
+.h3-inters{
+	padding: 15px 0;
+    margin: 0 12px;
+    line-height: 24px;
+}
+.h3-inters a{
+	display: inline-block;
+	vertical-align: middle;
+    width: 30px;
+    height: 24px;
+    border: 1px solid #ddd;
+    margin: 0 4px 0 0;
+}
+.h3-inters a:nth-of-type(1){
+	background: url(../img/list/sprite-kinds.png) no-repeat 0 -30px;
+}
+.h3-inters a:last-child{
+	background: url(../img/list/sprite-kinds.png) no-repeat -30px -30px;
+}
+.h3-booking{
+	font-weight: 400;
+    padding: 10px 10px 5px;
+    font-size: 1em;
+}
+.txt-input{
+	 border: 1px solid #ddd;
+    color: #888;
+    margin: 0 0 0 10px;
+    height: 20px;
+    line-height: 20px;
+    width: 200px;
+    padding: 2px;
+}
+.a-booking{
+	display: block;
+    margin: 7px auto 0;
+    width: 137px;
+    height: 33px;
+	background: url(../img/list/sprite-kinds.png) no-repeat 0 -170px;
+    text-indent: -999em;
+    overflow: hidden;
+}

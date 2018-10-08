@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/cssreset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+	</head>
+	<body>
+		<div class="headerwrap">
+			<div class="header">
+				<div>
+					<a href="#"><img src="../img/logo.png"/></a>
+					<img src="../img/slogan.png">
+				</div>
+				<h3>注册顺逛商城></h3>
+				<p><a href="login.html">已有海尔商城账号登录></a></p>
+			</div>
+			<div class="navbox">
+				<nav>
+					<div class="divbox">
+						<div class="div1">
+							<i>1</i>
+							<span>账户设置</span>
+						</div>
+						<div class="div2">
+							<i>2</i>
+							<span>密码设置</span>
+						</div>
+						<div class="div3">
+							<i>3</i>
+							<span>注册成功</span>
+						</div>
+						<div class="div4">
+							<div class="uregister">用户注册</div>
+							<div class="wregister"><a href="#">微店主注册</a></div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		
+		
+		<div class="shop_info_wrap">
+        <!-- START nr_forget_pw_wrap -->
+        <div class="nr_forget_pw_wrap">
+            <!-- 顺逛微店说明 -->
+            <div class="ehaier-announcement">
+                <div class="announce-container">
+                    <div class="tit">什么是顺逛微店主？</div>
+                    <div class="cont">
+                        <p>
+                            顺逛是海尔集团旗下官方微店平台。旨在精选各行业优质品牌及商家资源，甄选精品和爆品，为微店主搭建专属的“0成本创业平台”，提供自主创业良机，实现微店主、品牌商、平台多方共创共赢。
+                        </p>
+                    </div>
+                    <div class="tit">顺逛微店主有哪些特权？</div>
+                    <div class="cont">
+                        <ul>
+                            <li>创业0风险</li>
+                            <li>产品保障</li>
+                            <li>物流保障（免运费、按约送达、免费安装、体验满意后再付款、15天无理由退货）</li>
+                            <li>售后保障</li>
+                            <li>专业免费培训</li>
+                            <li>品牌授权</li>
+                        </ul>
+                    </div>
+                    <span style="padding-left:140px;"><a href="http://www.ehaier.com/subject/weidian.html">查看更多&gt;&gt;</a></span>
+                </div>
+            </div>
+            <!------------------------email Form start------------------------------------------------------------------------------------------------>
+            <div class="regular-container">
+                <form id="shop_email_login_form" style="display: none;" class="js_mmjs_validation" action="/toRegister.html" method="get">
+                    <input type="hidden" name="sourceType" value="">
+                    <div class="f_pw_form margin-80">
+                        <div class="email-start" style="height: 364px;">
+                            <div class="form_row formrow js_mmjs_validation_fe_wrap" id="email_row">
+                                <label class="label-tit">邮箱</label>
+                                <input id="emailInput" placeholder="请输入邮箱" class="fe_text jsv_required jsv_email" title="邮箱格式错误" type="text" name="userName" maxlength="60">
+                                <div id="emailErrorShow" class="validation_marked_info js_validation_marked_info"></div>
+                            </div>
+                            <!--验证码start-->
+                            <div class="form_row formrow js_mmjs_validation_fe_wrap">
+                                <label class="label-tit">验证码</label>
+                                <input class="fe_text fe_text_min jsv_required" placeholder="请输入验证码" type="text" name="verifycode" title="验证码不能为空" id="validcode">
+                                <img id="verifyEmailCodeId" align="middle" src="getKaptcha3?Fri Oct 05 2018 22:21:28 GMT+0800 (中国标准时间)" onclick="this.src='getKaptcha3?'+new Date().getTime()" height="33px" width="80" class="v_code_holder">
+                                <div class="validation_marked_info js_validation_marked_info" id="span_verifyCode"></div>
+                            </div>
+                            <!--验证码end-->
+                            <div class="form_row formrow w_350 w_500 item-hidden">
+                                <!--<input type="checkbox" name="kjtFlag" id="kjt_flag" checked="checked" value="1">
+                                <a href="https://www.kjtpay.com/view/xieyi/ServiceAgreement.html" target="_blank">同步开通海尔快捷通账号</a>
+                                <br>-->
+                                <br>
+
+                                <input type="checkbox" name="agree" id="agree1" value="0" checked="checked">
+                                我已阅读并同意<a href="http://www.ehaier.com/article.php?a=fixed&amp;alias=agreement" target="_blank">《海尔商城用户服务协议》</a>
+                                和<a href="http://www.ehaier.com/article.php?a=fixed&amp;alias=agreementkjt" target="_blank">《快捷通服务协议》</a>
+                            </div>
+                            <div class="form_row change-way">
+                                <p><span>邮箱</span> | <span class="p-span" id="regphone">手机</span></p>
+                            </div>
+                            <div id="email-next" class="common-next">下一步</div>
+                            <!--<div class="form_row form_btn" id="emailSubmit">
+                                <a class="shop_abtn_bl btn_w_190"  href="javascript:void(0)"><b>同意以上协议，马上注册</b></a>
+                            </div>-->
+                            <!-- END f_pw_form-3 -->
+                        </div>
+                        <!--邮箱密码-->
+                        <div class="email-password" style="height: 364px;">
+
+                            <div class="form_row formrow js_mmjs_validation_fe_wrap">
+                                <span style="font-size:12px;color:rgb(170, 170, 170)">*密码为数字、字母、特殊符号的组合，长度6位~20位(字母区分大小写）</span>
+                            </div>
+
+                            <div class="form_row formrow js_mmjs_validation_fe_wrap">
+                                <label class="label-tit">登录密码</label>
+                                <input class="fe_text jsv_equal_password" placeholder="6-20位密码,包含大小写字母和数字" type="password" id="emailpassword" name="password">
+                                <div class="validation_marked_info js_validation_marked_info js_hide_tips" id="email_password_span"></div>
+                            </div>
+                            <div class="form_row formrow">
+                                <label class="label-tit"></label>
+                                <span id="emailStrengthPic" style="display: none"></span>
+                            </div>
+                            <!-- END f_pw_form-1 -->
+                            <div class="form_row formrow js_mmjs_validation_fe_wrap">
+                                <label class="label-tit">确认密码</label>
+                                <input class="fe_text  jsv_equal_password" placeholder="请再次输入登录密码" type="password" id="emailrepassword" name="repassword" value="" title="两次密码不一致">
+
+                                <div class="validation_marked_info js_validation_marked_info js_hide_tips" id="email_repassword_span"></div>
+                            </div>
+                            <input type="hidden" name="CSRFMemKey" value="b6d33e14-5fa3-4304-bccd-e59d4385cd4c">
+                            <input type="hidden" name="CSRFToken" value="b1402480-6c0e-4be0-b9d1-ea0f81e7ca0b">
+                            <div id="emailSubmit" class="common-next">完成</div>
+                        </div>
+                    </div>
+                </form>
+                <!--------------------------------------------email Form end-------------------------------------------------------------->
+                <!------------------------------------------------------------------------------------------------------------------------>
+                <!-------------------------------------------mobile Form start------------------------------------------------------------>
+                <form id="shop_phone_login_form" action="/toRegister.html" method="get" style="display: block;">
+                    <input type="hidden" name="sourceType" value="">
+                    <div class="f_pw_form mobile-area margin-80">
+                        <div class="old_mobile padding-0">
+                            <input type="hidden" name="source" value="pcmobile">
+                            <div class="mobile-start" style="display:block;height: 364px;">
+                                <div class="form_row formrow js_mmjs_validation_fe_wrap" id="phone_row">
+                                    <label class="label-tit">手机号码</label>
+                                    <input id="phoneInput" value="" class="fe_text jsv_required" placeholder="请输入手机号" title="手机号码不能为空" type="text" name="userName" maxlength="11">
+                                    <div id="phoneErrorShow" class="validation_marked_info js_validation_marked_info"></div>
+                                </div>
+                                <!--验证码start-->
+                                <div class="form_row formrow js_mmjs_validation_fe_wrap">
+                                    <label class="label-tit">验证码</label>
+                                    <input class="fe_text fe_text_min jsv_required" value="" type="text" name="verifycode" placeholder="请输入验证码" title="验证码不能为空" id="validMobilecode">
+                                    <img id="verifyMobileCodeId" align="middle" src="../img/regetKaptcha3.png" height="33px" width="80" class="v_code_holder">
+                                    <div class="validation_marked_info js_validation_marked_info" id="span_mobile_verifyCode"></div>
+                                </div>
+                                <!--验证码end-->
+                                <!--短信验证码start-->
+                                <div class="ckform-row formrow">
+                                    <span class="reg-title label-tit">手机验证码</span>
+                                    <input id="smsCode" name="mobileVerifyCode" value="" type="text" placeholder="输入手机验证码" class="fe_text fe_text_min" maxlength="6" validate="{required:'手机验证码不能为空'}">
+                                    <!--<button autocomplete="off" type="button" class="in-sendbtn js_sendSMSCode" value="">发送验证码</button>-->
+                                    <button class="mybtn" type="button" value="发送验证码">发送验证码</button>
+                                    <div class="validation_marked_info" id="mobile_sms_code_span"></div>
+                                </div>
+                                <!--<div class="form_row w_350 w_500 item-hidden">
+                                    <br>
+                                    <input type="checkbox" name="agree" id="agree2" value="0" checked="checked">
+                                    我已阅读并同意<a href="http://www.ehaier.com/article.php?a=fixed&amp;alias=agreement" target="_blank">《海尔商城用户服务协议》</a>
+                                    和<a href="http://www.ehaier.com/article.php?a=fixed&amp;alias=agreementkjt" target="_blank">《快捷通服务协议》</a>
+                                </div>-->
+
+                                <div class="form_row change-way">
+                                    <p><span>手机</span> | <span class="p-span" id="regemail">邮箱</span></p>
+                                </div>
+                                <div id="mobile-next" class="common-next">下一步</div>
+                            </div>
+                            <!--手机密码-->
+                            <div class="mobile-password" style="display:none;height: 364px;">
+                                <div class="form_row formrow js_mmjs_validation_fe_wrap">
+                                    <span style="font-size:12px;color:rgb(170, 170, 170)">*密码为数字、字母、特殊符号的组合，长度6位~20位(字母区分大小写）</span>
+                                </div>
+                                <div class="form_row formrow">
+                                    <label class="label-tit">登录密码</label>
+                                    <input class="fe_text js_dval_ipt" type="password" value="" placeholder="6-20位密码,包含大小写字母和数字" id="mobile_password" name="password">
+                                    <div class="validation_marked_info" id="mobile_password_span"></div>
+                                </div>
+                                <div class="form_row formrow">
+                                    <label class="label-tit"></label>
+                                    <span id="mobileStrengthPic" style="display: none"></span>
+                                </div>
+                                <!-- END f_pw_form-1 -->
+                                <div class="form_row formrow">
+                                    <label class="label-tit">确认密码</label>
+                                    <input class="fe_text js_dval_ipt" type="password" value="" placeholder="请再次输入登录密码" id="mobile_repassword" name="repassword">
+                                    <div class="validation_marked_info" id="mobile_repassword_span"></div>
+                                </div>
+                                <input type="hidden" name="CSRFMemKey" value="b6d33e14-5fa3-4304-bccd-e59d4385cd4c">
+                                <input type="hidden" name="CSRFToken" value="b1402480-6c0e-4be0-b9d1-ea0f81e7ca0b">
+
+                                <div id="mobileSubmit" class="common-next">完成</div>
+                            </div>
+
+                        </div>
+                
+            </div></form>
+            <!--------------------------------------------------------mobile Form end--------------------------------------------------->
+        </div>
+        <!--注册成功-->
+        <div class="register-success" style="height: 364px;padding-left:38px;padding-top:63px;">
+            <p>恭喜您注册成功，快快进入商城赚取佣金吧。</p>
+            <div class="enterShop"><a href="http://www.ehaier.com">进入商城</a></div>
+            <div class="promote"><a href="/toUpCK.html">继续升级</a></div>
+        </div>
+
+        <!-- END f_pw_form -->
+    </div>
+    <!-- END nr_forget_pw_wrap -->
+</div>
+		
+					<div class="footer">
+				<div class="footer-top">
+					<ul>
+						<li><a href="#">关于我们</a><span class="links-ver">|</span></li>
+						<li><a href="#">投诉建议</a><span class="links-ver">|</span></li>
+						<li><a href="#">售后服务</a><span class="links-ver">|</span></li>
+						<li><a href="#">联系我们</a><span class="links-ver">|</span></li>
+						<li><a href="#">友情链接</a></li>
+					</ul><br /><br /><br />
+					<p>网站备案/许可证号:
+						<a href="#"> 鲁ICP备09096283号</a>
+						<a href="#">鲁公网安备37021202000654号</a>
+					</p>
+					<p>Copyright&copy;2000-2018 海尔集团电子商务有限公司 All Rights Reserved</p>
+				</div>
+				<div class="footer-bottom">
+					<ul>
+						<li><img src="../img/login01.png"></li>
+						<li><img src="../img/login02.png"></li>
+						<li><img src="../img/login03.png"></li>
+						<li><img src="../img/login04.jpg" height="40px"></li>
+						<li><img src="../img/login05.jpg"></li>
+					</ul>
+				</div>
+			</div>	
+		<script src="../js/jquery-1.11.1.js"></script>
+		<script src="../js/register.js"></script>
+	</body>
+</html>

@@ -76,10 +76,133 @@ var countryArr = [
  ];
 var regionArr = [
 	[
-		[['1街道']],
-		[],
-		[]
+		[
+			[
+				['1.1街道'],
+				['1.2街道'],
+				['1.3街道']
+			],
+			[
+				['2.1街道'],
+				['2.2街道'],
+				['2.3街道']
+			],
+			[
+				['3.1街道'],
+				['3.2街道'],
+				['3.3街道']
+			]
+		]
+	],
+	[
+		[
+			[
+				['2.11街道'],
+				['2街道'],
+				['2街道']
+			],
+			[
+				['1街道'],
+				['2街道'],
+				['2街道']
+			],
+			[
+				['1街道'],
+				['2街道'],
+				['2街道']
+			]
+		],
+		[
+			[
+				['2.22街道'],
+				['2街道'],
+				['2街道']
+			],
+			[
+				['1街道'],
+				['2街道'],
+				['2街道']
+			],
+			[
+				['1街道'],
+				['2街道'],
+				['2街道']
+			]
+		]
+	],
+	[
+		[
+			[
+				['3.11街道'],
+				['2街道'],
+				['2街道']
+			],
+			[
+				['1街道'],
+				['2街道'],
+				['2街道']
+			],
+			[
+				['1街道'],
+				['2街道'],
+				['2街道']
+			]
+		],
+		[
+			[
+				['3.22街道'],
+				['2街道'],
+				['2街道']
+			],
+			[
+				['1街道'],
+				['2街道'],
+				['2街道']
+			],
+			[
+				['1街道'],
+				['2街道'],
+				['2街道']
+			]
+		]
+	],
+	[
+		[
+			[
+				['4.11街道'],
+				['2街道'],
+				['2街道']
+			],
+			[
+				['1街道'],
+				['2街道'],
+				['2街道']
+			],
+			[
+				['1街道'],
+				['2街道'],
+				['2街道']
+			]
+		],
+		[
+			[
+				['4.22街道'],
+				['2街道'],
+				['2街道']
+			],
+			[
+				['1街道'],
+				['2街道'],
+				['2街道']
+			],
+			[
+				['1街道'],
+				['2街道'],
+				['2街道']
+			]
+		]
 	]
+		
 ];
 $('.address').mouseenter(function(){
 	$('.select-location-box').css('display','block');
@@ -93,6 +216,75 @@ $('.select-location-box').mouseenter(function(){
 $('.select-location-box').mouseleave(function(){
 	$(this).css('display','none');
 })
+//获取地址
+var seAddress;
+var seAddress1;
+var seAddress2;
+var seAddress3;
+var seAddress4;
+//创建下拉菜单选项
+function createOption(obj,data){
+	
+	for (var i in data) {
+		var op = new Option(data[i],i);
+		obj.options.add(op);
+	}
+}
+var seprovice = document.getElementById('seprovice');
+var secity = document.getElementById('secity');
+var secountry = document.getElementById('secountry');
+var seregion = document.getElementById('seregion');
+var addressAll = document.getElementById('addressAll');
+seprovice.onchange = function(){
+	seAddress1 = this.options[this.selectedIndex].innerHTML;
+	console.log(seAddress1);
+//	console.log(this.options[this.selectedIndex])
+	secity.options.length = 1;
+	createOption(secity,cityArr[seprovice.value]);
+	if (seprovice.value >= 1) {
+		secity.onchange();
+		secountry.options.length = 1;
+		seregion.options.length = 1;
+	}
+	
+//	console.log(seprovice.selectedIndex)
+	
+}
+secity.onchange = function(){
+//	console.log(this)
+//	console.log(this.selectedIndex)
+	if (this.selectedIndex == -1) {
+		return;
+	}else{
+		seAddress2 = this.options[this.selectedIndex].innerHTML;
+		console.log(seAddress2)
+		secountry.options.length = 1;
+		createOption(secountry,countryArr[seprovice.value][secity.value]);
+		if (secity.value >= 1) {
+			secountry.onchange();
+			seregion.options.length = 1;
+		}
+	}
+}
+secountry.onchange = function(){
+	
+	if (this.selectedIndex == -1) {
+		return;
+	}else{
+		seAddress3 = this.options[this.selectedIndex].innerHTML;
+		console.log(seAddress3)
+		seregion.options.length = 1;
+		createOption(seregion,regionArr[seprovice.value][secity.value][secountry.value]);
+	}
+	
+}
+seregion.onchange = function(){
+	seAddress4 = this.options[this.selectedIndex].innerHTML;
+	console.log(seAddress4)
+	seAddress = seAddress1 + seAddress2 + seAddress3 + seAddress4;
+	addressAll.innerHTML = seAddress;
+	console.log(seAddress)
+}
 
 //tab栏
 var distance = $('.tab-details').offset().top;
